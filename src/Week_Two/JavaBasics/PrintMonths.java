@@ -44,6 +44,8 @@ public class PrintMonths {
                 break;
             case 12:
                 System.out.println("December");
+            default:
+                System.out.println("Invalid month");
         }
     }
 }
