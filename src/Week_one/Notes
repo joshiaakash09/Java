@@ -1,0 +1,116 @@
+                               OOP: Classes & Objects
+
+Object-Oriented Programming (OOP) is a programming paradigm. A programming paradigm guides programmers to analyze
+programming problems, and structure programming solutions, in a specific way.
+
+Java is primarily an OOP language but it supports limited forms of functional programming and it can be used to
+(although not recommended) write procedural code.
+
+JavaScript and Python support functional, procedural, and OOP programming.
+
+OOP FACTS:
+- OO is a programming paradigm
+- OO guides us in how to structure the solution
+- OO is mainly an abstraction mechanism
+- OO is modeled after how the objects in real world work
+- Java and C++ are OO languages
+- Java can be used to write procedural code
+- Prolog follows the Logic Programming paradigm
+- C follows the procedural paradigm. Yes, we can write procedural code using OO languages e.g., AddressBook-level1.
+- While many languages support the OO paradigm, OO is not a language itself.
+
+Procedural vs OOP:
+Procedural languages work at simple data structures (e.g., integers, arrays) and functions level. Because an object
+is an abstraction over data+related functions, OO works at a higher level.
+
+-------------------------------------------------------------------------------
+Objects:
+Every object has both state (data) and behavior (operations on data).
+
+Every object has an interface and an implementation.
+
+Every real world object has:
+
+1. an interface through which other objects can interact with it
+2. an implementation that supports the interface but may not be accessible to the other object
+e.g.
+Calculator: the buttons and the display are part of the interface; circuits are part of the implementation.
+
+-------------------------------------------------------------------------------
+
+                                   Objects as Abstractions
+
+The concept of Objects in OOP is an abstraction mechanism because it allows us to abstract away the lower level
+details and work with bigger granularity entities i.e. ignore details of data formats and the method implementation
+details and work at the level of objects.
+-------------------------------------------------------------------------------
+
+                                ************** Encapsulation of Objects **************
+ Encapsulation protects an implementation from unintended actions and from inadvertent access.
+
+An object is an encapsulation of some data and related behavior in terms of two aspects:
+
+1. The packaging aspect: An object packages data and related behavior together into one self-contained unit.
+
+2. The information hiding aspect: The data in an object is hidden from the outside world and are only
+accessible using the object's interface.
+
+FACTS:
+-  An object is an encapsulation because it packages data and behavior into one bundle.
+-  An object is an ABSTRACTION because it lets us think in terms of higher level concepts such as Students rather
+ than student-related functions and data separately.
+
+ ------------
+
+ Constructors
+ The syntax for constructors is similar to that of other methods, except:
+
+ - The name of the constructor is the same as the name of the class.
+ - The keyword static is omitted.
+ - Do not return anything. A constructor returns the created object by default.
+ - Like other methods, constructors can be overloaded.
+
+
+ When you invoke new, Java creates the object and calls your constructor to initialize the instance variables.
+ When the constructor is done, it returns a reference to the new object.
+
+ ----------
+
+ this keyword:
+ The this keyword is a reference variable in Java that refers to the current object. You can use this the same way
+ you use the name of any other object.
+ For example, you can read and write the instance variables of this, and you can pass this as an argument to other
+ methods. But you do not declare this, and you can’t make an assignment to it.
+
+ --------
+ Interface
+ In Java, an interface is a reference type, similar to a class, mainly containing method signatures.
+ Defining an interface is similar to creating a new class except it uses the keyword interface in place of class.
+
+ Interfaces cannot be instantiated—they can only be implemented by classes. When an instantiable class implements an
+ interface, indicated by the keyword implements, it provides a method body for each of the methods declared in the
+ interface.
+
+ Furthermore, Java allows multiple inheritance among interfaces. A Java interface can inherit multiple other interfaces.
+ A Java class can implement multiple interfaces (and inherit from one class).
+
+ ---------------
+
+ Collection
+ A collection — sometimes called a container — is simply an object that groups multiple elements into a single unit.
+ Collections are used to store, retrieve, manipulate, and communicate aggregate data.
+
+ The collections framework is a unified architecture for representing and manipulating collections.
+ It contains the following:
+
+The collections framework is a unified architecture for representing and manipulating collections. It contains the following:
+
+Interfaces: These are abstract data types that represent collections. Interfaces allow collections to be manipulated independently of the details of their representation.
+ Example: the List<E> interface can be used to manipulate list-like collections which may be implemented in different ways such as ArrayList<E> or LinkedList<E>.
+
+Implementations: These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
+ Example: the ArrayList<E> class implements the List<E> interface while the HashMap<K, V> class implements the Map<K, V> interface.
+
+Algorithms: These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface.
+ Example: the sort(List<E>) method can sort a collection that implements the List<E> interface.
+

@@ -1,0 +1,45 @@
+Q. Difference between checked and unchecked exception?
+
+Exception: In Java “an event that occurs during the execution of a program that disrupts the normal flow of
+instructions” is called an exception. This is generally an unexpected or unwanted event which can occur either
+at compile-time or run-time in application code.
+
+Checked Exception : occur at compile-time. Classes that directly inherit Throwable - except RuntimeException
+and Error - are checked exceptions
+Examples:
+ IOException
+             FileNotFoundException
+             SocketException
+                    ConnectException
+              UnknownHostException
+ ReflectiveOperationException
+             ClassNotFoundException
+             IllegalAccessException
+             InstantiationException
+             InvocationTargetException
+             NoSuchFieldException
+ CloneNotSupportException
+ InterruptedException
+
+
+Unchecked Exception : Occur at run-time. Classes that inherit RuntimeException are unchecked exceptions
+
+RunTimeException
+                ArithmeticException
+                ArrayStoreException
+                ClassCostException
+                ConcurrentModificationException
+                EnumConstantNotPresentException
+                IllegalArgumentException
+                          IllegalThreadStateException
+                          NumberFormatException
+                          IllegalMonitorStateException
+                IllegalStateException
+                IndexOutOfBoundException
+                          ArrayIndexOutOfBound
+                          StringIndexOutOfBound
+                NegativeArraySizeException
+                NullPointerException
+                SecurityException
+                TypeNotPresentException
+                UnsupportedOperationException
